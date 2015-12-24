@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+		<h1><%= title%></h1
+
+		<form action='/add' method="post">
+			title:<input type="text" name="title">
+			url  :<input type="text" name="url">
+			<input type="submit" class="btn btn-primary">
+		</form>
+		
+		<ul>
+			<% items.forEach(function(item){%>
+			<li>
+				<a href="<%= item.url %>" rel="<%= item._id %>"> 
+				<%= item.title %></a>
+			</li>
+			<%})%>
+		</ul>
+
+  </body>
+</html>
