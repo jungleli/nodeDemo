@@ -49,3 +49,11 @@ Used for demo.
  5. 打开浏览，启动：
 
     >http://localhost:3000
+
+ 6. 可测试接口
+ 	post:  
+ 	http://localhost:3000/rest/add
+ 	delete:
+ 	http://localhost:3000/rest/delete/:id
+ 	get:
+ 	http://localhost:3000/rest/list

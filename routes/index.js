@@ -20,27 +20,8 @@ router.get('/', function(req, res, next) {
     });
 });
 
-var newItem=[
-
-  {
-    title: 'Express 4.x - API 中文手册',
-    url:  'http://www.expressjs.com.cn/4x/api.html',
-    created: '2015-12-10'
-  },
-  {
-    title: 'npm',
-    url:  'https://www.npmjs.com/',
-    created: '2015-12-11'
-  },
-  {
-    title: 'nodejs',
-    url: 'https://nodejs.org/en/',
-    created: '2015-12-23'
-  }
-];
-
 router.post('/add', function(req, res){
-	// var newItem = req.body;
+	var newItem = req.body;
 	var collection = db.get("bookmarks");
 	collection.insert(newItem, function(err){
 		if(err){
