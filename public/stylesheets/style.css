@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.container li{
+	list-style: none;
+    font-size: 1.5em;
+}
+
+.container label{
+	margin: 0 5px; 
+}
