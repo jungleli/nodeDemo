@@ -1,5 +1,6 @@
-var monk = require('monk');
-var db = monk('localhost:27017/demo');
+var db = require('monk')('localhost:27017/demo');
+// var monk = require('monk');
+// var db = monk('localhost:27017/demo');
 
 module.exports = {
 	query : function(req,res){
@@ -10,6 +11,7 @@ module.exports = {
                 res.send(err);
             }else{
                 res.send(result);
+
             }
         });
 	},

@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var monk = require('monk');
-var db = monk('localhost:27017/demo');
+// var monk = require('monk');
+// var db = monk('localhost:27017/demo');
+var db = require('monk')('localhost/demo');
 
 
 /* GET home page. */
@@ -12,12 +13,11 @@ router.get('/', function(req, res, next) {
         if(err){
             res.send(err);
         }else{
-        	console.log(result);
+        	// console.log(result);
             res.render('index', 
             			{title: "bookmarkList", items : result});
         }
     });
-	
 });
 
 router.post('/add', function(req, res){
