@@ -51,9 +51,10 @@ Used for demo.
     >http://localhost:3000
 
  6. 可测试接口
- 	post:  
- 	http://localhost:3000/rest/add
- 	delete:
- 	http://localhost:3000/rest/delete/:id
- 	get:
- 	http://localhost:3000/rest/list
+
+	 1.	post:  
+	 	* http://localhost:3000/rest/add
+	 2. delete:
+	 	* http://localhost:3000/rest/delete/:id
+	 3. get:
+	 	* http://localhost:3000/rest/list
