@@ -13,8 +13,11 @@ Used for demo.
   - 下载并安装[nodejs](https://nodejs.org/en/)
  
 	安装nodejs时会一并安装npm，使用以下命令确定是否安装成功
+
+	```
 	>node -v
 	>npm -v
+	```
 
 运行项目
 -------------
