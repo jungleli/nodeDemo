@@ -9,18 +9,21 @@
 		<h1><%= title%></h1>
 
 		<form action='/add' method="post">
-			<label for="title">title:</label>
-			<input type="text" name="title">
-			<label for="url">url:</label>
-			<input type="text" name="url">
+			<label for="content">slogan:</label>
+			<input type="text" name="content" required>
+			<label for="url">author:</label>
+			<input type="text" name="author" required>
 			<input type="submit">
 		</form>
 		
 		<ul>
 			<% items.forEach(function(item){%>
 			<li>
-				<a href="<%= item.url %>" rel="<%= item._id %>"> 
-				<%= item.title %></a>
+				
+				<%= item.content %>
+
+				------by  
+				<e rel="<%= item._id %>"> <%=item.author %></e>
 			</li>
 			<%})%>
 		</ul>
